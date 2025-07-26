@@ -1,2 +1,2 @@
-# DSA-Excel-Doc
+# DSA-Excel-Project
 This is the first section of the project that I was required to work on, as a criterion for certification at The Incubator Hub.
