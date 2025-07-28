@@ -5,7 +5,7 @@ This is the first section of the project that I was required to work on, as a cr
 
 ### 1. Project Overview:
 
-You are working as a *Junior Data Analyst* at *RetailTech Insights*, a company that provides e-commerce analytic solutions to companies like Amazon. Your team has been tasked with analysing product and customer rebiew data to generate insights that can guide product improvement, marketing strategies, and customer engagement.
+You are working as a **Junior Data Analyst** at **RetailTech Insights**, a company that provides e-commerce analytic solutions to companies like Amazon. Your team has been tasked with analysing product and customer rebiew data to generate insights that can guide product improvement, marketing strategies, and customer engagement.
 
 ### 2. Data Description:
 
@@ -58,4 +58,10 @@ The dataset contains information scraped from Amazon product pages,including:
     ### 4. Final Task: Dashboard Creation 
 
 Using your cleaned dataset and pivot outputs, build an Excel dashboard. Unleash your 
-Creativity
+Creativity.
+
+### 5. Execution:
+
+The project was executed using Ms. Excel. It involved three phases which include: Data cleaning, data analysis, and data visualization.
+
+- Data Cleaning: To clean the data, I first of all checked for duplicated values in the product_id column since the assumption is that the column should contain unique product ids. After removing duplicates, the number of rows were reduced to 1,351 from 1465. 
