@@ -21,9 +21,9 @@ The dataset contains information scraped from Amazon product pages,including:
   
 - TotalFields: 16 columns.
 
-  ### 3. Analysis Task
+### 3. Analysis Task
 
-  Use pivot tables and calculated columns where necessary to answer the following:
+Use pivot tables and calculated columns where necessary to answer the following:
   
 1. What is the average discount percentage by product category?
    
@@ -55,7 +55,7 @@ The dataset contains information scraped from Amazon product pages,including:
      
 14. Identify the top 5 products in terms of rating and number of reviews combined.
 
-    ### 4. Final Task: Dashboard Creation 
+### 4. Final Task: Dashboard Creation 
 
 Using your cleaned dataset and pivot outputs, build an Excel dashboard. Unleash your 
 Creativity.
