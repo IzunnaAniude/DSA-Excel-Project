@@ -123,6 +123,4 @@ Then, I made use of pivot tables and some other excel functions (Sum, Count...e.
 Using line charts, pie charts, bar charts, column charts, and some formatting and design tools, I created a dashboard to provide a visual representation of key information obtained from the analysis. The dashboard was designed to be easy to interpret thereby, aiding effective finanacial decision making.
 
 #### View Dashboard here:
-
-
-  
+[Amazon case study(AutoRecovered).xlsx](https://github.com/user-attachments/files/21559345/Amazon.case.study.AutoRecovered.xlsx)
