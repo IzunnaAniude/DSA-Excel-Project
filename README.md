@@ -64,4 +64,65 @@ Creativity.
 
 The project was executed using Ms. Excel. It involved three phases which include: Data cleaning, data analysis, and data visualization.
 
-- Data Cleaning: To clean the data, I first of all checked for duplicated values in the product_id column since the assumption is that the column should contain unique product ids. After removing duplicates, the number of rows were reduced to 1,351 from 1465. 
+#### - Data Cleaning: 
+
+To clean the data, I first of all checked for duplicated values in the product_id column since the assumption is that the column should contain unique product IDs. After removing duplicates, the number of rows were reduced to 1,351 from 1465.
+
+Next, the category column contained different category levels separated by a vertical bar (|). So, using the 'text-to-column' feature, I separated the entries into columns and then chose the first category level for the analysis. I copied the selected column, and pasted it in my dataset. I then hid the mother column for category.
+
+I did the same thing for the review_id column. However, after separating each review into columns, I then copied all the columns and pasted it in my dataset, before hiding the mother column for review_id.
+
+The next step was to check for errors, and blank cells in the columns containing values using the filter feature. 
+
+I corrected the errors, and replaced blank cells with '0' (as instructed) using the 'find and replace' feature.
+
+
+#### - Data Analysis:
+
+I had to create new columns for:
+
+- Potential revenue:
+  =Actual price * Rating count.
+  
+- Discount of >= 50%:
+  =IF(Discount % >=50%,"YES","NO").
+  
+- Price range (<1000,1000-10,000, >10,000):
+ =IFS(E2<1000,"<₹1000",E2<=10000,"₹1000 - ₹10000",E2>10000,">₹10000").
+  
+- Rating count <1000:
+  =IF([@[rating_count]]<1000,"YES","NO").
+  
+- Combination of rating and no. of reviews:
+  =[@rating]+([@[review count per product]]/8).
+  
+- Discount % range (0-10%, 11-20%,...,91-100%):
+
+  =IFS(
+  [@[discount_percentage]]<=0.1, "0-10%",
+  [@[discount_percentage]]<=0.2, "11-20%",
+  [@[discount_percentage]]<=0.3, "21-30%",
+  [@[discount_percentage]]<=0.4, "31-40%",
+  [@[discount_percentage]]<=0.5, "41-50%",
+  [@[discount_percentage]]<=0.6, "51-60%",
+  [@[discount_percentage]]<=0.7, "61-70%",
+  [@[discount_percentage]]<=0.8, "71-80%",
+  [@[discount_percentage]]<=0.9, "81-90%",
+  [@[discount_percentage]]<=1,   "91-100%"
+  ).
+  
+- Review count per product:
+  =COUNTA(U2:AB2).
+
+After adding the columns, I put the dataset into a table.
+
+Then, I made use of pivot tables and some other excel functions (Sum, Count...e.t.c) to summarize the data and obtain the necessary information needed for data visualization.
+
+#### - Data Visualization:
+
+Using line charts, pie charts, bar charts, column charts, and some formatting and design tools, I created a dashboard to provide a visual representation of key information obtained from the analysis. The dashboard was designed to be easy to interpret thereby, aiding effective finanacial decision making.
+
+#### View Dashboard here:
+
+
+  
